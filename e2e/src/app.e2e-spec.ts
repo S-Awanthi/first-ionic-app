@@ -12,3 +12,4 @@ describe('new App', () => {
     expect(page.getParagraphText()).toContain('Start with Ionic UI Components');
   });
 });
+ 
