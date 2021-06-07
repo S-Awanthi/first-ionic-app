@@ -20,7 +20,7 @@ const routes: Routes = [
     loadChildren: () => import('./slider/slider.module').then( m => m.SliderPageModule)
   },
   {
-    path: 'search',
+    path: 'search', 
     loadChildren: () => import('./search/search.module').then( m => m.SearchPageModule)
   },
   {

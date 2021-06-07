@@ -16,7 +16,7 @@ describe('SearchPage', () => {
     fixture = TestBed.createComponent(SearchPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  })); 
 
   it('should create', () => {
     expect(component).toBeTruthy();

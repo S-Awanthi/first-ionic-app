@@ -49,6 +49,7 @@ export class SearchPage implements OnInit {
     }
   }
 
+  // Back
   onClick(){
     this.router.navigate(["/home"])
   }
