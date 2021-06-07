@@ -1,6 +1,6 @@
 <ion-app>
   <!-- To display menu throughout the application -->
-  <ion-menu contentId="menu-content" menuId="menu-content" side="start" type="overlay">
+  <ion-menu contentId="menu-content" menuId="menu-content" side="start" type="overlay" (ionDidOpen)="_ionDidOpen($event)" (ionWillClose)="_ionWillClose($event)">
     <ion-header>
       <ion-toolbar>
         <ion-title >Side Menu</ion-title>
@@ -9,7 +9,8 @@
 
     <ion-content>
       <ion-list>  
-        <ion-item>
+        <!-- Manually add menu items -->
+        <!-- <ion-item>
           <ion-label>Profile</ion-label>
           <ion-icon slot="start" name="person"></ion-icon>
         </ion-item>      
@@ -36,7 +37,24 @@
         <ion-item>
           <ion-label>Cancel</ion-label>
           <ion-icon slot="start" name="close"></ion-icon>
+        </ion-item> -->
+
+        <!-- Bind menu items from the compnent file using ng-for loop -->
+        <ion-item *ngFor="let item of sideMenuList" (click)="onMenuClick(item.title)">
+          <ion-label> {{ item.title }} </ion-label>
+
+          <!-- Bind icon fron typescript file [name] -->
+          <ion-icon slot="start" [name]="item.icon"></ion-icon>
         </ion-item>
+
+        <ion-item>
+          <div class="center">
+            <ion-button (click)="onMenuClick('close')" expand="block" fill="clear" shape="round"> 
+              Hide Menu
+            </ion-button>
+          </div>
+        </ion-item>
+
       </ion-list>
     </ion-content>
 
