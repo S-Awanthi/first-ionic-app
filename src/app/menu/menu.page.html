@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  
+  <ion-toolbar>
+    <div>
+      <ion-title>
+        Ion Menu 
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding"> 
+
+  <ion-button expand="full" (click)="_openSideMenu()" shape="round" color="warning">
+    <p>Click to View Menu</p>
+  </ion-button>
+
+  <p class="content">The Menu component is a navigation drawer that slides in from the side of the current view. </p>
+  <p class="content">By default, it slides in from the left, but the side can be overridden. The menu will be displayed differently 
+      based on the mode, however the display type can be changed to any of the available menu types. </p>
+
+  <div>
+    <ion-button  expand="full" color="dark" (click)="onClick()" shape="round" id="goto-btn">
+      <p>Go back to Home Page</p>
+    </ion-button>
+  </div>
+  <br>
+
+</ion-content>

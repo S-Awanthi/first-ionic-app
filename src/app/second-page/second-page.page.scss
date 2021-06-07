@@ -1,0 +1,16 @@
+#goto-btn{
+    position: fixed;
+    bottom: 0;
+    margin-left: 15%;
+    margin-bottom: 5%;
+  }
+
+  
+#goto-btn p{
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+
+ion-content {
+  --background: #fff url("/assets/image/bg.jpg") no-repeat center center / cover;
+}

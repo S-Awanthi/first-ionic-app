@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar>
+    
+      <ion-title>
+        Action Sheet
+      </ion-title>     
+       
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button expand="full" (click)="_actionSheet()" shape="round" color="warning">
+    <p>Click to View Action Sheet</p>
+  </ion-button>
+
+  <p class="content">An Action Sheet is a dialog that displays a set of options. It appears on top of the app's content, and must be manually dismissed by the user before they can resume interaction with the app.</p>
+  <p class="content">Destructive options are made obvious in ios mode. There are multiple ways to dismiss the action sheet, including tapping the backdrop or hitting the escape key on desktop.</p>
+
+  
+<div>
+  <ion-button  expand="full" color="dark" (click)="onClick()" shape="round" id="goto-btn">
+    <p>Go back to Home Page</p>
+  </ion-button>
+</div>
+<br>
+
+</ion-content>

@@ -1,0 +1,56 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+#goto-btn{
+  display: inline-block;
+  width: 45%;
+  margin-left: 3%;
+}
+
+#goto-btn p{
+  font-weight: bolder;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+
+ion-content {
+  --background: #fff url("/assets/image/bg.jpg") no-repeat center center / cover;
+}
+
+.head{
+  text-align: center;
+  padding-top: 5%;
+  color: white;
+  // font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+ion-toolbar{
+  --background: #0097a7;
+  --color: white;
+}

@@ -1,0 +1,26 @@
+ion-toolbar{
+    --background: #0097a7;
+    --color: white;
+}
+
+#goto-btn p{
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+    
+}
+
+#goto-btn{
+    position: fixed;
+    bottom: 0;
+    margin-left: 15%;
+    margin-bottom: 5%;
+}
+
+.head{
+    text-align: center;
+    padding-top: 40%;
+    color: rgb(49, 23, 23);
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+  }

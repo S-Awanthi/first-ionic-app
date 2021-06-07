@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  
+  <ion-toolbar>
+    <div>
+      <ion-title>
+        Home Page 
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true"> 
+
+  <!-- Selector from profile-img.components.ts -->
+  <div style="color: white; margin: 5%; display: block;">
+    Hello! 
+    <!-- <app-profile-img></app-profile-img> -->
+  </div>
+  
+  
+  <h2 class="head">Welcome to the First <br> Ionic App</h2><br>
+  
+  <div>
+    <ion-button color="light" (click)="onClickUserDetail()" shape="round" id="goto-btn">
+      <p>Components</p>
+    </ion-button>
+    <ion-button  color="light" (click)="onClickSlider()" shape="round" id="goto-btn">
+      <p>Ionic Slider </p>
+    </ion-button>
+    <ion-button  color="light" (click)="onClickSearch()" shape="round" id="goto-btn">
+      <p>Ionic Search</p>
+    </ion-button>
+    <ion-button  color="light" (click)="onClickActionSheet()" shape="round" id="goto-btn">
+      <p>Action Sheet</p>
+    </ion-button>
+    <ion-button  color="light" (click)="onClickIonMenu()" shape="round" id="goto-btn">
+      <p>Ion Menu</p>
+    </ion-button>
+  </div>
+  
+
+  
+
+  <!-- Selector from user-detail.components.ts -->
+  <!-- <app-user-detail></app-user-detail> -->
+  
+</ion-content>

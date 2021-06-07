@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div>
+      <ion-title>
+        User Detail 
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Selector from profile-img.components.ts -->
+  <app-profile-img></app-profile-img>
+
+  <!-- Selector from user-detail.components.ts -->
+  <app-user-detail *ngFor="let item of sampleDataList" [fromParentData]="item">
+
+  </app-user-detail>>
+
+  <div>
+    <ion-button  expand="full" color="dark" (click)="onClick()" shape="round" id="goto-btn">
+      <p>Go back to Home Page</p>
+    </ion-button>
+  </div>
+  <br>
+</ion-content>
